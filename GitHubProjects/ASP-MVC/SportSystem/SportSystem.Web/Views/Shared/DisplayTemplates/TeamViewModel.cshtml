@@ -1,0 +1,16 @@
+﻿@model SportSystem.Web.ViewModels.TeamViewModel
+@{
+    ViewBag.Title = "TeamViewModel";
+}
+
+<div class="panel">
+    <h2><span>@Model.TeamName</span></h2>
+
+    <div>
+        website: @Model.Website
+    </div>
+
+    <div>
+        <span class="badge">Votes: @Model.Votes</span>
+    </div>
+</div>

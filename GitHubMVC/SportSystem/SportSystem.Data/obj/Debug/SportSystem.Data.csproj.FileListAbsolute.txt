@@ -1,0 +1,16 @@
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\SportSystem.Data.dll.config
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\SportSystem.Data.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\SportSystem.Data.pdb
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\SportSystem.Models.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\SportSystem.Models.pdb
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\obj\Debug\SportSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\obj\Debug\SportSystem.Data.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Data\obj\Debug\SportSystem.Data.pdb

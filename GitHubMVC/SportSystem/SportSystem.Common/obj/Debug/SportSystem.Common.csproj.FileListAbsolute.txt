@@ -1,0 +1,10 @@
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\SportSystem.Common.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\SportSystem.Common.pdb
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\AutoMapper.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\AutoMapper.pdb
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\AutoMapper.xml
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\obj\Debug\SportSystem.Common.csprojResolveAssemblyReference.cache
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\obj\Debug\SportSystem.Common.dll
+C:\Users\Ivo\Desktop\GitHubMVC\SportSystem\SportSystem.Common\obj\Debug\SportSystem.Common.pdb

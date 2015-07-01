@@ -1,0 +1,44 @@
+dependencies
+------------------------------------------------
+------------------------------------------------
+IN THE GLOBAL.ASAX FILE
+
+ViewEngines.Engines.Clear();
+ViewEngines.Engines.Add(new RazorViewEngine());
+
+var autoMapperConfig = new AutoMapperConfig(new List<Assembly> { Assembly.GetExecutingAssembly()});
+autoMapperConfig.Execute();
+------------------------------------------------
+------------------------------------------------
+the VIEW_MODELS are with IMapFrom<Bookmark>
+the INPUT_MODELS are with IMapTo<Bookmark>
+------------------------------------------------
+------------------------------------------------
+Biblioteki ot Nuget
+Entity Framework - all
+Identity - all
+Ninject - all
+AutoMapper - Common, Web (all)
+Pagedlist.mvc - WEB
+ajax - WEB / microsoft.jquery.unobtrusive.ajax
+
+When submitting to change the connection string to DOT "."
+------------------------------------------------
+------------------------------------------------
+1. Data - classLibrary
+	- ApplicationDbContext 
+	- To Add the IDbSet<***>
+2. Model - classLibrary
+	- ApplicationUser - User
+	- All The Model Classes
+<----------TO CHANGE THE NAMES ONLY AFTER I HAVE MADE EVERYTHING ELSE WORK------------>
+3. To make the registration easier instead email we should use user
+4. The ConnectionString - not to forget to make it Source="." when submitting
+5. Add the Repository pattern
+6. Add the Mappings
+7. Adding Paging - pagedlist.mvc
+8. For the admin area implement (MVC5 Controller with EF)
+2 h 16 min 27 sec
+------------------------------------------------
+------------------------------------------------
+THE DISPLAY TEMPLATES ARE HOLDING THE VIEW FOR A SINGLE ITEM

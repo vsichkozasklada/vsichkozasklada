@@ -1,0 +1,19 @@
+﻿@model SportSystem.Web.ViewModels.MatchViewModel
+@{
+    ViewBag.Title = "MatchViewModel";
+}
+<div class="panel">
+    <div>
+        <h2><span>@Model.HomeTeamTeamName</span> vs <span>@Model.AwayTeamTeamName</span></h2>
+</div>
+<div>
+    Start: @Model.DateTimeMatch
+</div>
+    @if (this.User.Identity.IsAuthenticated)
+    {
+        <div>
+            @Html.ActionLink("Details", "Details", "Matches", new { id = @Model.Id }, null)
+        </div>
+    }     
+</div>
+

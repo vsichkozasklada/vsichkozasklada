@@ -1,0 +1,19 @@
+﻿@model SportSystem.Web.ViewModels.StartPageView
+@{
+    ViewBag.Title = "Sport System";
+}
+
+
+
+<div class="jumbotron">
+    <h1> @ViewBag.Title</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayFor(x => x.Team)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(x => x.Match)      
+    </div>
+</div>

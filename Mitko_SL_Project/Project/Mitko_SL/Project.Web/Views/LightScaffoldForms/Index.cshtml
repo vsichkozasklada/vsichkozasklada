@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Project.Models.LightScaffoldForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessPartner.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoadLength)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoadWidth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoadHeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShelfLength)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShelfDepth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShelfHeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShelfNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShelfWeightCapacity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDimensionsKnown)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessPartner.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoadLength)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoadWidth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoadHeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShelfLength)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShelfDepth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShelfHeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShelfNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShelfWeightCapacity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDimensionsKnown)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

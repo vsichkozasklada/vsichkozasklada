@@ -1,0 +1,190 @@
+﻿@model Project.Models.ConsoleScaffold
+
+@{
+    ViewBag.Title = "Запитване за конзолни стелажи";
+}
+
+<h2>Запитване за конзолни стелажи</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Размери на товара в см</h4>
+                @* @Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.LoadLength, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LoadLength, new { htmlAttributes = new { @class = "form-control", placeholder = "Дължина в сантиметри" } })
+                        @Html.ValidationMessageFor(model => model.LoadLength, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.LoadWidth, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LoadWidth, new { htmlAttributes = new { @class = "form-control", placeholder = "Широчина в сантиметри" } })
+                        @Html.ValidationMessageFor(model => model.LoadWidth, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.LoadHeight, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LoadHeight, new { htmlAttributes = new { @class = "form-control", placeholder = "Височина в сантиметри" } })
+                        @Html.ValidationMessageFor(model => model.LoadHeight, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <img src="~/Images/FormImages/load.JPG" class="img-responsive"/>
+                <img src="~/Images/FormImages/ConsoleScaffold.JPG" class="img-responsive" />
+            </div>
+
+            <div class="col-md-4">
+                <h4>Размери за стелажа в см</h4>
+                @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.MaterialLength, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MaterialLength, new { htmlAttributes = new { @class = "form-control", placeholder = "Дължина в сантиметри" } })
+                        @Html.ValidationMessageFor(model => model.MaterialLength, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.MaterialDepth, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MaterialDepth, new { htmlAttributes = new { @class = "form-control", placeholder = "Дълбочина в сантиметри" } })
+                        @Html.ValidationMessageFor(model => model.MaterialDepth, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.MaterialHeight, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MaterialHeight, new { htmlAttributes = new { @class = "form-control", placeholder = "Височина в сантиметри" } })
+                        @Html.ValidationMessageFor(model => model.MaterialHeight, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.ShelfNumber, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ShelfNumber, new { htmlAttributes = new { @class = "form-control", placeholder = "Брой нива" } })
+                        @Html.ValidationMessageFor(model => model.ShelfNumber, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Данни за контакт</h4>
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.BusinessPartner.Name, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BusinessPartner.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Лице за контакт" } })
+                        @Html.ValidationMessageFor(model => model.BusinessPartner.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.BusinessPartner.Company, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BusinessPartner.Company, new { htmlAttributes = new { @class = "form-control", placeholder = "Фирма" } })
+                        @Html.ValidationMessageFor(model => model.BusinessPartner.Company, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.BusinessPartner.Email, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BusinessPartner.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Еmail" } })
+                        @Html.ValidationMessageFor(model => model.BusinessPartner.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.BusinessPartner.Phone, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BusinessPartner.Phone, new { htmlAttributes = new { @class = "form-control", placeholder = "Телефон" } })
+                        @Html.ValidationMessageFor(model => model.BusinessPartner.Phone, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.BusinessPartner.Address, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BusinessPartner.Address, new { htmlAttributes = new { @class = "form-control", placeholder = "Адрес" } })
+                        @Html.ValidationMessageFor(model => model.BusinessPartner.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-4 col-md-10">
+                @Html.ActionLink("Обратно", "Index", null, new { @class = "btn btn-default" })
+                <input type="submit" value="Изпрати" class="btn btn-success" />
+            </div>
+        </div>
+       
+        @*<div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BusinessPartner.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.BusinessPartner.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "лице за контакт" } })
+                                @Html.ValidationMessageFor(model => model.BusinessPartner.Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BusinessPartner.Company, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.BusinessPartner.Company, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.BusinessPartner.Company, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BusinessPartner.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.BusinessPartner.Email, new { htmlAttributes = new { @class = "form-control", required = false } })
+                                @Html.ValidationMessageFor(model => model.BusinessPartner.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BusinessPartner.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.BusinessPartner.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.BusinessPartner.Phone, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BusinessPartner.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.BusinessPartner.Address, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.BusinessPartner.Address, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+
+    @*<div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            @Html.ActionLink("Обратно", "Index", null, new { @class = "btn btn-default" })
+            <input type="submit" value="Изпрати" class="btn btn-success" />
+        </div>
+    </div>*@
+}
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

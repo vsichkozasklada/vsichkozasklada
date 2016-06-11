@@ -1,0 +1,77 @@
+﻿@model Project.Web.InputModels.BlogEntryInputModel
+<script src="~/Scripts/jquery-2.1.4.min.js" type="text/javascript"></script>
+@{
+    ViewBag.Title = "Добавете нова статия";
+}
+
+
+@using (Html.BeginForm("Create", "BlogEntry", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h2>@ViewBag.Title</h2>
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <img id="Image2" class="img-responsive" src="~/Images/ImageBlankDefault.jpg" />
+                @*<input type="file" onchange="ShowpImagePreview(this)" name="fileUpload" multiple/> @*multiple/>*@
+                @Html.LabelFor(m => m.ImageUpload)
+                @Html.TextBoxFor(m => m.ImageUpload, new { type = "file", onchange = "ShowImagePreview(this)", multiple = true })
+
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.TextBoxFor(x => x.Title, new { @class = "form-control", placeholder = "Заглавие" })
+                @Html.ValidationMessageFor(x => x.Title, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m => m.Category, new { @class = "col-md-2 control-label" })
+                    @Html.EnumDropDownListFor(x => x.Category, "Select")
+                    @Html.ValidationMessageFor(x => x.Category, "", new { @class = "text-danger" })*@
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m => m.TextContent, new { @class = "col-md-2 control-label" })
+                    @Html.EditorFor(x => x.TextContent, new { @class = "col-md-2 control-label", @rows = "6", style = "width: 60%; max-width: 60%;" })
+                    @Html.ValidationMessageFor(x => x.TextContent, "", new { @class = "col-md-2 control-label" })*@
+
+                @*<div class="form-group has-error">
+                    <div class="col-md-10">*@
+                @Html.EditorFor(model => model.TextContent, new { htmlAttributes = new { @class = "form-control", placeholder = "Добавете описание...", @rows = "5" } })
+                @Html.ValidationMessageFor(model => model.TextContent, "", new { @class = "text-danger" })
+                @*</div>
+                    </div>*@
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(model => model.ImageTitle, new { htmlAttributes = new { @class = "form-control", placeholder = "Име на снимката", @rows = "5" } })
+                @Html.ValidationMessageFor(model => model.ImageTitle, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(model => model.ExpiryDate, new { htmlAttributes = new { @class = "form-control", placeholder = "Валиден до" } })
+                @Html.ValidationMessageFor(model => model.ExpiryDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <br />
+    <input type="submit" name="name" value="Add Post" class="col-md-offset-2 btn btn-md btn-success" />
+    <div class="form-group">
+    </div>
+}
+
+
+<script type="text/javascript">
+    function ShowImagePreview(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#Image2').attr('src', e.target.result);//jQuery
+            }
+            reader.readAsDataURL(input.files[0]);
+            console.log(input.files[0]);
+        }
+    }
+</script>
+

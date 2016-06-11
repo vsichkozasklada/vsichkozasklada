@@ -1,0 +1,98 @@
+﻿@model Project.Models.LightScaffoldForm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LightScaffoldForm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BusinessPartner.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BusinessPartner.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoadLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoadLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoadWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoadWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoadHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoadHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShelfLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShelfLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShelfDepth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShelfDepth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShelfHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShelfHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShelfNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShelfNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShelfWeightCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShelfWeightCapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDimensionsKnown)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDimensionsKnown)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

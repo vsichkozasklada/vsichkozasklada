@@ -1,0 +1,16 @@
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\obj\Debug\Project.Models.csprojResolveAssemblyReference.cache
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Models.dll.config
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Models.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Models.pdb
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\EntityFramework.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Project.Common.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Project.Common.pdb
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\EntityFramework.xml
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\obj\Debug\Models.dll
+C:\Users\Ivo\Desktop\Mitko_SL_Project\Project\Mitko_SL\Models\obj\Debug\Models.pdb

@@ -13,7 +13,7 @@ namespace Project.Web.Controllers
         public HomeController(IApplicationData data)
             : base(data)
         {
-
+            // THIS THE GITHUB PROJECT
         }
 
         public ActionResult Index()

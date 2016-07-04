@@ -3,6 +3,16 @@
     padding-bottom: 20px;
 }
 
+.img_blog:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+.img_blog {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;

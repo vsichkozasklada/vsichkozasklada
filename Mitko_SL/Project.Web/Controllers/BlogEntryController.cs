@@ -21,7 +21,15 @@ namespace Project.Web.Controllers
         // GET: BlogEntry
         public ActionResult Index()
         {
-            return View();
+
+            var blogEntries = Data.BlogEntry.All();
+            List<BlogEntryViewModel> model = new List<BlogEntryViewModel>();
+            foreach (var item in blogEntries)
+            {
+                model.Add(MapToBlogEntryInputModel(item));
+            }
+
+            return View(model);
         }
 
         [HttpGet]
@@ -98,6 +106,26 @@ namespace Project.Web.Controllers
                 return RedirectToAction("Index");
             }
             return View(model);
+        }
+
+        private BlogEntryViewModel MapToBlogEntryInputModel(BlogEntry item)
+        {
+            var image = Data.Image.All().Where(i => i.BlogEntryID == item.ID).FirstOrDefault();
+
+            BlogEntryViewModel model = new BlogEntryViewModel()
+            {
+                ID = image != null ? "myModal" + image.ID : "",
+                Author = item.Author,
+                Category = item.Category,
+                ExpiryDate = item.ExpiryDate,
+                PublishDate = item.PublishDate,
+                Title = item.Title,
+                ImagePath = image != null ? image.ImageFilePath : "no title",
+                ImageTitle = image != null ? image.AltText : "no title",
+                ImageAltText = image != null ? image.Title : "no title",
+                TextContent = item.TextContent
+            };
+            return model;
         }
     }
 }

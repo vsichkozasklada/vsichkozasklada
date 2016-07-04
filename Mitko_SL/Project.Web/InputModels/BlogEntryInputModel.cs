@@ -7,7 +7,7 @@ using System.Web;
 namespace Project.Web.InputModels
 {
     public class BlogEntryInputModel
-    {
+    {        
         public string Title { get; set; }
 
         [DataType(DataType.MultilineText)]

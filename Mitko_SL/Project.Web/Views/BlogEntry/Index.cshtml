@@ -1,8 +1,16 @@
-﻿@{
-    ViewBag.Title = "Index";
+﻿@model IEnumerable<Project.Web.BlogEntryViewModel>
+@{
+    ViewBag.Title = "Блог";
 }
 
 <h2>Index</h2>
 
-@Html.ActionLink("Add Blog Entry", "Create", null, new { @class = "btn btn-success" })
+@if (User.Identity.IsAuthenticated)
+{
+    @Html.ActionLink("Add Blog Entry", "Create", null, new { @class = "btn btn-success" })
+}
 
+@foreach (var item in Model)
+{
+    @Html.Partial("_BlogEntryPartial", item);
+}

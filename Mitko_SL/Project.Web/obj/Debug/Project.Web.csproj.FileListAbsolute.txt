@@ -142,3 +142,9 @@ C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\Microsoft
 C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\obj\Debug\Project.Web.csprojResolveAssemblyReference.cache
 C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\obj\Debug\Project.Web.dll
 C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\obj\Debug\Project.Web.pdb
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\System.Web.Http.dll
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\System.Web.Http.xml
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Web\bin\System.Web.Http.WebHost.xml

@@ -6,7 +6,37 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/Scripts/Custom/navbarDropDown.js"></script>
+    <script>
+        //$(document).ready(function () {
 
+        //    //$("#t_change2").hide();
+
+        //    //$("p").click(function () {
+        //    //    $(this).hide();
+        //    //});
+
+        //    //$("#bt").hover(function () {
+        //    //    alert("Hello");
+        //    //    $("#t_change").hide();
+        //    //    $("#t_change2").show();
+
+        //    //});
+        //    $("#1").hover(function () {
+        //        $("#li1").attr("style", "visibility:visible");
+        //        $("#li2").attr("style", "display:none");
+
+        //        //$("#li1").show();
+        //        //$("#li2").hide();
+        //    });
+        //    $("#2").hover(function () {
+        //        $("#li1").attr("style", "display:none");
+        //        $("#li2").attr("style", "visibility:visible");
+
+        //    });
+        //});
+    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,10 +55,20 @@
                     <li>@Html.ActionLink("За нас", "About", "Home")</li>
                     <li>@Html.ActionLink("Контакти ", "Contact", "Home")</li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Стелажи<b class="caret"></b></a>
-                        <ul class="dropdown-menu" style="width:400px;">
-                            <li>@Html.ActionLink("LightScaffold", "Index", "LightScaffoldForms")</li>
-                            <li>@Html.ActionLink("Конзолни стелажи", "Index", "ConsoleScaffold")</li>
+                        <a href="#" id="ddlNavBar" class="dropdown-toggle" data-toggle="dropdown">Стелажи<b class="caret"></b></a>
+                        <ul class="dropdown-menu" data-slide-to="dropdown" style="width:400px;">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <li id="liItem1">@Html.ActionLink("LightScaffold", "Index", "LightScaffoldForms")</li>
+                                    <li id="liItem2">@Html.ActionLink("LightScaffold", "Index", "LightScaffoldForms")</li>
+                                    <li id="liItem3">@Html.ActionLink("LightScaffold", "Index", "LightScaffoldForms")</li>
+                                    <li id="liItem4">@Html.ActionLink("Конзолни стелажи", "Index", "ConsoleScaffold")</li>
+                                </div>
+                                <div class="col-md-6 hidden-sm hidden-xs">
+                                    <span id="submenu1">Some text here</span>
+                                    <span id="submenu2">Other Text here</span>
+                                </div>
+                            </div>
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Блог ", "Index", "BlogEntry")</li>
@@ -39,6 +79,10 @@
     </div>
     <div class="container body-content">
         @Html.Partial("_Notifications")
+
+        <div id="box"></div>
+        <div class="btn btn-warning" id="bt">Button</div>
+
         @RenderBody()
         <hr />
         <footer>

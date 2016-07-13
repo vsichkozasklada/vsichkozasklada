@@ -3,6 +3,44 @@
     padding-bottom: 20px;
 }
 
+.dropdown-menu > div > div > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #428bca;
+    white-space: nowrap;
+}
+
+    .dropdown-menu > div > div > li > a:hover,
+    .dropdown-menu > div > div > li > a:focus {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #428bca;
+    }
+
+#box {
+    border-color: transparent transparent transparent red;
+    border-style: solid;
+    border-width: 20px 0 20px 35px;
+    height: 0;
+    left: -10px;
+    margin: 10px;
+    position: absolute;
+    width: 0;
+    background: #FFFFFF;
+}
+
+/*#box {
+  border-top: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid #990000;
+  margin: 40px;
+}​*/
+/******************************************************************/
+
 .img_blog:hover {
     opacity: 0.5;
     filter: alpha(opacity=40);

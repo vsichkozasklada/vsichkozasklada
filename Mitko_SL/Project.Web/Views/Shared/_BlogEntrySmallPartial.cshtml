@@ -1,0 +1,26 @@
+﻿@model Project.Web.BlogEntryShortViewModel
+
+
+<div class="" style="margin-bottom:45px;">
+    <div class="text-right" style="color:red">
+        @Model.PublishDate.ToString("dd MMM yyyy")
+    </div>
+    <div class="" style="border-left:2px solid red;">
+        <p >
+            <div class="row">
+                <div class="col-sm-6" style="padding-left:23px;">
+                    <a href="/news/612-parts-warehouse.html" class="newstext">
+                        @Model.TextContent
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="~/Images/33cf610f-c310-4d0c-96c7-518faff8d3f3Koala.jpg" />
+                </div>
+                
+            </div>
+            <br />
+            @Html.ActionLink("Още", "Details", new { id = Model.ID }, new { @class = "text-right", style = "color:red; float:right;" })
+        </p>
+    </div>
+    <span style="clear:both;"></span>
+</div>

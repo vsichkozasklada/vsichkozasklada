@@ -17,3 +17,4 @@ C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Common\bin\Debug\
 C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Common\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Common\obj\Debug\Project.Common.dll
 C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Common\obj\Debug\Project.Common.pdb
+C:\Users\Ivo\Desktop\Projects\vsichkozasklada\Mitko_SL\Project.Common\obj\Debug\Project.Common.csprojResolveAssemblyReference.cache

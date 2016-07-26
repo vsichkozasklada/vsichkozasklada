@@ -6,46 +6,11 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/Custom/navbarDropDown.js"></script>
     <script>
-        $(document).ready(function () {
-            var moz = $.browser.mozilla();
-            var userBrowser = $.browser.browser();
-            alert("hello");
-            if (moz == true) {
-                $("#span-chevron").addClass("glyphicon glyphicon-chevron-right").attr("style", "padding-left: 38px;");
-            } else {
-                $("#span-chevron").addClass("glyphicon glyphicon-chevron-right pull-right");
-            }
-        });
-        //$(document).ready(function () {
 
-        //    //$("#t_change2").hide();
-
-        //    //$("p").click(function () {
-        //    //    $(this).hide();
-        //    //});
-
-        //    //$("#bt").hover(function () {
-        //    //    alert("Hello");
-        //    //    $("#t_change").hide();
-        //    //    $("#t_change2").show();
-
-        //    //});
-        //    $("#1").hover(function () {
-        //        $("#li1").attr("style", "visibility:visible");
-        //        $("#li2").attr("style", "display:none");
-
-        //        //$("#li1").show();
-        //        //$("#li2").hide();
-        //    });
-        //    $("#2").hover(function () {
-        //        $("#li1").attr("style", "display:none");
-        //        $("#li2").attr("style", "visibility:visible");
-
-        //    });
-        //});
     </script>
 </head>
 <body>
@@ -64,102 +29,11 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("За нас", "About", "Home")</li>
                     <li>@Html.ActionLink("Контакти ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Проекти ", "Index", "Projects")</li>
                     <li class="dropdown">
                         <a href="#" id="ddlNavBar" class="dropdown-toggle" data-toggle="dropdown">Стелажи<b class="caret"></b></a>
                         <ul class="dropdown-menu" data-slide-to="dropdown" style="width:600px;">
                             @Html.Partial("_DropDownElements");
-                            @*<div class="row">
-                                <div class="col-md-4 col-sm-12">
-                                    <li id="liItem1">@Html.ActionLink("LightScaffold", "Index", "LightScaffoldForms", new { @class = "a-red" })</li>
-                                    <li id="liItem2">@Html.ActionLink("Конзолни стелажи", "Index", "ConsoleScaffold", new { @class = "a-red" })</li>
-                                </div>
-                                <div class="col-md-8 hidden-sm hidden-xs submenu-gallery">
-                                    <div id="submenu1">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/elctrocar.gif" class="img-responsive" />
-                                                    Some text here Some text hereSome text here Some text hereSome text here
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/elctrocar.gif" class="img-responsive" />
-                                                    Some text here Some text hereSome text here Some text hereSome text here
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/elctrocar.gif" class="img-responsive" />
-                                                    Some text here Some text hereSome text here Some text hereSome text here
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div>
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/elctrocar.gif" class="img-responsive" />
-                                                    Some text here Some text hereSome text here Some text hereSome text here
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/elctrocar.gif" class="img-responsive" />
-                                                    Some text here Some text hereSome text here Some text hereSome text here
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/elctrocar.gif" class="img-responsive" />
-                                                    Some text here Some text hereSome text here Some text hereSome text here
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="submenu2">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/handelectocar.gif" class="img-responsive" />
-                                                    Other Text
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/handelectocar.gif" class="img-responsive" />
-                                                    Other Text
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/handelectocar.gif" class="img-responsive" />
-                                                    Other Text
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/handelectocar.gif" class="img-responsive" />
-                                                    Other Text
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/handelectocar.gif" class="img-responsive" />
-                                                    Other Text
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a href="#" class="a-red">
-                                                    <img src="~/Images/SubmenuImages/handelectocar.gif" class="img-responsive" />
-                                                    Other Text
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>*@
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Блог ", "Index", "BlogEntry")</li>

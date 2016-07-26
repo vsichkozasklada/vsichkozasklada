@@ -8,6 +8,7 @@ namespace Project.Web.InputModels
 {
     public class BlogEntryInputModel
     {        
+        [Required]
         public string Title { get; set; }
 
         [DataType(DataType.MultilineText)]

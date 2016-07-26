@@ -203,6 +203,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LightScaffoldFormsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PalletScaffoldController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Extensions\NotificationExtensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -244,6 +246,10 @@
     <Content Include="Images\FormImages\ConsoleScaffold.JPG" />
     <Content Include="Images\FormImages\load.JPG" />
     <Content Include="Images\ImageBlankDefault.jpg" />
+    <Content Include="Images\ProjectImages\ProjectOne\rsz_20150122082608.jpg" />
+    <Content Include="Images\ProjectImages\ProjectOne\rsz_20150122082608_700x400_sharpen.jpg" />
+    <Content Include="Images\ProjectImages\ProjectThree\rsz_img_0036_700x400.jpg" />
+    <Content Include="Images\ProjectImages\ProjectThree\rsz_pict0192_700x400.jpg" />
     <Content Include="Images\SubmenuImages\handelectocar.gif" />
     <Content Include="Images\SubmenuImages\elctrocar.gif" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
@@ -399,9 +405,14 @@
     <Content Include="Views\Shared\_BlogEntryPartial.cshtml" />
     <Content Include="Views\Shared\_BlogEntrySmallPartial.cshtml" />
     <Content Include="Views\Shared\_DropDownElements.cshtml" />
+    <Content Include="Views\PalletScaffold\Index.cshtml" />
+    <Content Include="Views\PalletScaffold\Create.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\ProjectImages\ProjectFour\" />
+    <Folder Include="Images\ProjectImages\ProjectTwo\" />
     <Folder Include="Views\Forms\" />
   </ItemGroup>
   <ItemGroup>

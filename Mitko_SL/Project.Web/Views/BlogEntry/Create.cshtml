@@ -4,6 +4,10 @@
     ViewBag.Title = "Добавете нова статия";
 }
 
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
 @using (Html.BeginForm("Create", "BlogEntry", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
 {

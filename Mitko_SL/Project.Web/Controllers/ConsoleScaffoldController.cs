@@ -39,6 +39,7 @@ namespace Project.Web.Controllers
                 if (model.BusinessPartner.ID > 0)
                 {
                     model.BusinessPartnerID = model.BusinessPartner.ID;
+                    model.DateSubmitted = DateTime.Now;
 
                     Data.ConsoleScaffold.Add(model);
                     Data.SaveChanges();
